@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <article class="error">
+        <h2>User not logged in</h2>
+        <p>Did you forget to log in?</p>
+        <p>Try logging in  <a href="{% url 'admin:index' %}">here</a> </p>
+    </article>
+{% endblock %}
